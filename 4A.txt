@@ -8,7 +8,7 @@ CREATE TABLE course (
     -> thumbnail INT,
     -> id_author INT,
     -> duration TIME,
-	-> description TEXT
+    -> description TEXT
     -> );
 
 3.Membuat Table content
