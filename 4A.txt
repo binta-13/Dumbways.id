@@ -1,0 +1,56 @@
+1.Membuat Database Dumbways
+CREATE DATABASE Dumbways;
+
+2.Membuat Table course
+CREATE TABLE course (
+    -> id INT NOT Null AUTO_INCREMENT PRIMARY KEY,
+    -> name VARCHAR(45) NOT NULL,
+    -> thumbnail INT,
+    -> id_author INT,
+    -> duration TIME,
+	-> description TEXT
+    -> );
+
+3.Membuat Table content
+CREATE TABLE content (
+    -> id INT NOT Null AUTO_INCREMENT PRIMARY KEY,
+    -> name VARCHAR(45),
+    -> video_link TEXT,
+    -> type VARCHAR(45),
+    -> id_course INT
+	->));
+	
+3.Membuat Table Author
+CREATE TABLE author (
+    -> id INT NOT Null AUTO_INCREMENT PRIMARY KEY,
+    -> name VARCHAR(45)
+	->));
+
+4.Menampilkan Seluruh data course
+SELECT * FROM course;
+
+5.tampilkan course beserta penulis lengkap dengan content nya, field ditampilkan name course, durasi course, name author, description course, thumbnail course
+SELECT course.id, course.name, course.thumbnail, course.id_author, course.duration, course.description
+-> FROM course
+-> INNER JOIN content
+-> ON content.name = content.name
+-> ON author.name = author.name 
+
+6. tampilan detail course berdasarkan id
+SELECT * FROM course = course.id
+
+7.Menampilkan Seluruh data Suppliers
+SELECT * FROM suppliers_tb;
+
+8.Menambahkan data kedalam course
+INSERT INTO course VALUES
+    -> (null," "," ",int,time,txt);
+
+9.Menambahkan data kedalam content
+INSERT INTO content VALUES
+    -> (null," ",txt," ",INT);
+	
+10.Menambahkan data kedalam content
+INSERT INTO content VALUES
+    -> (null," ");
+    
